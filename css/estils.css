@@ -1,0 +1,56 @@
+
+body {
+    background-image: url(../img/newyork.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+legend {
+    margin: 0 auto;
+    font-size: x-large;
+    color: aquamarine;
+}
+
+picture img {
+    filter: sepia();
+    filter: hue-rotate(200deg);
+
+}
+
+ picture img:hover{
+    transition: margin-right 2s;
+    width: 400px;
+}  
+
+label {
+    color: white;;
+}
+
+
+.usuario input {
+    width: 600px;
+    background-color: azure;
+}
+
+.usuario ul li {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.usuario ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+button:hover {
+    border: 2px solid violet;
+}

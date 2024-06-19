@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formu</title>
+
+    <!-- <link href="css/reset.css" rel="stylesheet"> -->
+    <link href="css/estils.css" rel="stylesheet">
+</head>
+<body>
+    <form method="post" name="formulario" enctype="multipart/form-data">
+        <fieldset class="usuario">
+            <legend>Form</legend>
+
+            <ul>
+                <li>
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" name="nombre" type="text" placeholder="escriba el nombre" required tabindex="1">  
+                </li>
+
+                <li>
+                    <label for="apellidos">Apellidos</label>
+                    <input id="apellidos" name="apellidos" type="text" placeholder="escriba los apellidos" required tabindex="2">
+                </li>
+
+                <li>
+                    <label for="contraseña">Contraseña</label>
+                    <input id="contraseña" name="contraseña" type="password" pattern="[aA-zZ0-9]{4,9}" placeholder="escriba la contraseña" required tabindex="3">
+                </li>
+
+                <li>
+                    <label for="telefono">Telefono</label>
+                    <input id="telefono" name="telefono" type="tel" pattern="\d[0-9]{8}" placeholder="escriba el telefono" required tabindex="4">
+                </li>
+
+                <li>
+                    <label for="correo">Correo</label>
+                    <input id="correo" name="correo" type="email" placeholder="escriba el email" tabindex="5">
+                </li>
+
+                <li>
+                    <label for="cv">CV</label>
+                    <input id="cv" name="cv" type="file" tabindex="6" accept="image/*">
+                 </li> 
+
+            </ul>
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Varios</legend>
+            <label class="comidas" for="Comidas">Comidas</label>
+            <select id="Comidas">
+                <optgroup label="Desayuno">
+                    <option value="Tortitas">Tortitas</option>
+                    <option value="Gofres">Gofres</option>
+                </optgroup>
+
+                <optgroup label="Comida">
+                    <option value="Arroz">Arroz</option>
+                    <option value="Ensalada">Ensalada</option>
+                </optgroup>
+
+                <optgroup label="Merienda">
+                    <option value="Frutos secos">Frutos secos</option>
+                    <option value="Iogurt">Iogurt</option>
+                </optgroup>
+
+                <optgroup label="Cena">
+                    <option value="Verdura">Verdura</option>
+                    <option value="Sopa">Sopa</option>
+                </optgroup>
+
+                <optgroup label="Postre">
+                    <option value="Iogurt">Iogurt</option>
+                    <option value="Platano">Platano</option>
+                </optgroup>
+            </select>
+        </fieldset>
+
+
+        <div class="boton">
+            <button type="submit">ENVIAR</button>
+            <button type="reset">BORRAR</button>
+        </div>
+    </form>
+
+    <picture>
+
+        <source srcset="img/imagen3.jpg,
+                        img/imagen3@2x.jpg 2x,
+                        img/imagen3@3x.jpg 3x"
+                        media="(min-width:1280px)">
+
+        <source srcset="img/imagen5.jpg,
+                        img/imagen5@2x.jpg 2x,
+                        img/imagen5@3x.jpg 3x"
+                        media="(min-width:640px)">
+
+        <source srcset="img/imagen1.jpg,
+                        img/imagen1-2x.jpg 2x,
+                        img/imagen1-3x.jpg 3x"
+                        media="(min-width:360px)">
+         <img src="img/imagen1-3x.jpg" alt="paisaje">  
+         
+         
+    </picture>
+</body>
+</html>
